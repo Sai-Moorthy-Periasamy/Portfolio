@@ -14,6 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
       bsCollapse.hide();
     }
   });
+function updateJSText() {
+  const jsText = document.getElementById("jsText");
+  if (window.innerWidth < 768) {
+    jsText.textContent = "JS";
+  } else {
+    jsText.textContent = "JavaScript";
+  }
+}
+
+// Run when the page loads
+window.addEventListener("load", updateJSText);
+
+// Run when the window is resized
+window.addEventListener("resize", updateJSText);
 
   // Optional: Close navbar on window resize
   window.addEventListener("resize", function () {
