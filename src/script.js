@@ -14,14 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       bsCollapse.hide();
     }
   });
-function updateJSText() {
-  const jsText = document.getElementById("jsText");
-  if (window.innerWidth < 768) {
-    jsText.textContent = "JS";
-  } else {
-    jsText.textContent = "JavaScript";
-  }
-}
+
 
 // Run when the page loads
 window.addEventListener("load", updateJSText);
